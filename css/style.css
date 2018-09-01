@@ -1,0 +1,128 @@
+/* Empty. Add your own CSS if you like */
+  .nav-bar-block .bar {
+    background: linear-gradient(150deg,#281483 15%,#8f6ed5 70%,#d782d9 94%);
+    height: 50px;
+  }
+  .nav-bar-block .title {
+    color: #FFF !important;
+  }
+  .nav-bar-block .button{
+    color: #FFF !important;
+  }
+
+  .menuIcon {
+    text-align: center;
+    background: #FF9800;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    padding-top: 11px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+
+ion-list.rBtnDsr .item-radio {
+    width: 25%;
+    float: left;
+}
+
+
+ input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+  }
+  
+  label {
+    color: #c2e5f9;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 20px;
+  }
+  
+  input[type="radio"]:checked + label {
+    color: #1f475e;
+    background: #6dc9fe;
+    padding: 7px 22px;
+    border: 0px solid;
+  }
+  .radio-group {
+    border: solid 3px #6dc9fe;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .radio-dashboard-group {
+    border: solid 1px hsla(0,0%,100%,.2)!important;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+  }
+
+
+  .radio-dashboard-group input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+  }
+  
+  .radio-dashboard-group label {
+    color: #fcfcfc;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 3px 14px;
+  }
+  
+  .radio-dashboard-group input[type="radio"]:checked + label {
+    color: #dcf8c0;
+    background: hsla(0,0%,100%,.2)!important;
+    padding: 3px 14px;
+    border: 0px solid;
+  }
+ 
+ .img_online{
+  height: 49px;
+  width: 50px;
+  background: #3F51B5;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 28px;
+  color: #FFF;
+  padding-top: 14px;
+ }
+ .img_online::before {
+  content: '';
+  background: #4CAF50;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin-left: 29px;
+  margin-top: 19px;
+  border-radius: 50px;
+}
+.img_online1{
+  height: 49px;
+  width: 50px;
+  background: #3F51B5;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 28px;
+  color: #FFF;
+  padding-top: 14px;
+ }
+ .img_online1::before {
+  content: '';
+  background: #FFC107;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin-left: 29px;
+  margin-top: 19px;
+  border-radius: 50px;
+}

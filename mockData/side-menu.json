@@ -1,0 +1,55 @@
+[
+    {
+        "menuName": "DSR & Outstanding",
+        "menuIcon": "ti-bag",
+        "menuBgColor": "#FF9800",
+        "menuColor": "#ffe4bd",
+        "menuIconSize": "20px",
+        "childMenu": [
+            {
+                "childMenuName": "Retail + Distributor",
+                "routeLink": "app.browse"
+            },
+            {
+                "childMenuName": "Distributor",
+                "routeLink": ""
+            },
+            {
+                "childMenuName": "RETAIL + PROLINKS",
+                "routeLink": ""
+            }
+        ]
+    },
+    {
+        "menuName": "Registration & Visit",
+        "menuIcon": "ti-location-pin",
+        "menuBgColor": "#9C27B0",
+        "menuColor": "#f7c8ff",
+        "menuIconSize": "25px",
+        "childMenu": []
+    },
+    {
+        "menuName": "Registration & Visit",
+        "menuIcon": "ti-link",
+        "menuBgColor": "#4CAF50",
+        "menuColor": "#c3ffc6",
+        "menuIconSize": "22px",
+        "childMenu": []
+    },
+    {
+        "menuName": "Registration & Visit",
+        "menuIcon": "ti-folder",
+        "menuBgColor": "#673AB7",
+        "menuColor": "#d2bcfb",
+        "menuIconSize": "20px",
+        "childMenu": []
+    },
+    {
+        "menuName": "Registration & Visit",
+        "menuIcon": "ti-car",
+        "menuBgColor": "#E91E63",
+        "menuColor": "#f6adc6",
+        "menuIconSize": "25px",
+        "childMenu": []
+    }
+]

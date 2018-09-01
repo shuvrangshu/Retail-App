@@ -1,0 +1,169 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+      <span style="
+    background: hsla(0,0%,100%,.1);
+    bottom: auto;
+    left: -10%;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    z-index: 99;
+    border-radius: 50%;
+    top: -5px;
+"></span>
+      <span style="
+    background: hsla(0,0%,100%,.1);
+    bottom: auto;
+    left: 76%;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    z-index: 99;
+    border-radius: 50%;
+    top: 15px;
+"></span>
+      <span style="
+    background: hsla(0,0%,100%,.1);
+    bottom: auto;
+    left: 92%;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    z-index: 99;
+    border-radius: 50%;
+    top: -22px;
+"></span>
+      <span style="
+    background: hsla(0,0%,100%,.1);
+    bottom: auto;
+    left: 33%;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    z-index: 99;
+    border-radius: 50%;
+    top: -24px;
+"></span>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <!-- <ion-header-bar class="bar-stable">
+      <h1 class="title">Left</h1>
+    </ion-header-bar> -->
+    <ion-content style="background: #475b64;">
+      <div style="background: #324c58;position: fixed;width: 60px;height: 100%;">
+        <div style="text-align: center;border: 1px solid #03a9f4;background: #03a9f4;border-radius: 50%;height: 45px;width: 45px;padding-top: 4px;margin: auto;margin-top: 20px;">
+          <i class="ion-home" style="color: #cdecfb;font-size: 30px;"></i>
+        </div>
+        <div ng-repeat="md in menuData">
+          <div class="menuIcon" ng-style="{'background': '{{md.menuBgColor}}'}">
+            <i  ng-class="md.menuIcon" ng-style="{'color': '{{md.menuColor}}', 'font-size': '{{md.menuIconSize}}' }"></i>
+          </div>
+        </div>
+
+        <!-- <div style="text-align: center;border: 1px solid #FF9800;background: #FF9800;border-radius: 50%;height: 45px;width: 45px;padding-top: 11px;margin: auto;margin-top: 20px;">
+          <i class="ti-bag" style="color: #ffe4bd;font-size: 20px;"></i>
+        </div>
+        <div style="text-align: center;border: 1px solid #9C27B0;background: #9C27B0;border-radius: 50%;height: 45px;width: 45px;padding-top: 10px;margin: auto;margin-top: 20px;">
+          <i class="ti-location-pin" style="color: #f7c8ff;font-size: 25px;"></i>
+        </div>
+        <div style="text-align: center;border: 1px solid #4CAF50;background: #4CAF50;border-radius: 50%;height: 45px;width: 45px;padding-top: 10px;margin: auto;margin-top: 20px;">
+          <i class="ti-link" style="color: #c3ffc6;font-size: 22px;"></i>
+        </div>
+        <div style="text-align: center;border: 1px solid #673AB7;background: #673AB7;border-radius: 50%;height: 45px;width: 45px;padding-top: 11px;margin: auto;margin-top: 20px;">
+          <i class="ti-folder" style="color: #d2bcfb;font-size: 20px;"></i>
+        </div>
+        <div style="text-align: center;border: 1px solid #E91E63;background: #E91E63;border-radius: 50%;height: 45px;width: 45px;padding-top: 4px;margin: auto;margin-top: 20px;">
+          <i class="ti-car" style="color: #f6adc6;font-size: 25px;"></i>
+        </div> -->
+        <div style="text-align: center;bottom: 70px;position: absolute;margin: auto;width: 100%;">
+          <i class="ti-help-alt" style="font-size: 25px;color: #9E9E9E;"></i>
+        </div>
+        <div style="text-align: center;bottom: 18px;position: absolute;margin: auto;width: 100%;">
+          <i class="ti-settings" style="font-size: 25px;color: #9E9E9E;"></i>
+        </div>
+      </div>
+      <div style="padding-left: 60px;">
+        <div style="text-align: center;font-size: 19px;padding: 20px;border-bottom: 1px solid #ff980045;font-weight: 500;color: #ffedd3;background: #FF9800;">
+          DSR & Outstanding
+        </div>
+        <div style="padding: 10px 5px;">
+          <ul>
+            <li>
+              <div style="padding: 7px;border-bottom: 1px solid #ff98005e;color: #FF9800;font-weight: bold;">DSR</div>
+            </li>
+            <li style="padding-top: 20px;">
+              <i class="ti-arrow-circle-right" style="color: #FF9800;"></i>
+              <div style="word-wrap: break-word;width: 90%;display: inline-flex;padding-left: 8px;font-size: 15px;color: #faf4eb;font-weight: 500;" menu-toggle ui-sref="app.browse">Retail + Distributor</div>
+            </li>
+            <li style="padding-top: 20px;">
+              <i class="ti-arrow-circle-right" style="color: #FF9800;"></i>
+              <div style="word-wrap: break-word;width: 90%;display: inline-flex;padding-left: 8px;font-size: 15px;color: #faf4eb;font-weight: 500;">Distributor</div>
+            </li>
+            <li style="padding-top: 20px;">
+              <i class="ti-arrow-circle-right" style="color: #FF9800;"></i>
+              <div style="word-wrap: break-word;width: 90%;display: inline-flex;padding-left: 8px;font-size: 15px;color: #faf4eb;font-weight: 500;">Retail Excluding Distributor</div>
+            </li>
+            <li style="padding-top: 20px;">
+              <i class="ti-arrow-circle-right" style="color: #FF9800;"></i>
+              <div style="word-wrap: break-word;width: 90%;display: inline-flex;padding-left: 8px;font-size: 15px;color: #faf4eb;font-weight: 500;">PROLINKS</div>
+            </li>
+            <li style="padding-top: 20px;">
+              <i class="ti-arrow-circle-right" style="color: #FF9800;"></i>
+              <div style="word-wrap: break-word;width: 90%;display: inline-flex;padding-left: 8px;font-size: 15px;color: #faf4eb;font-weight: 500;">RETAIL + PROLINKS</div>
+            </li>
+            <li>
+              <div style="padding: 7px;border-bottom: 1px solid #ff98005e;color: #FF9800;font-weight: bold;margin-top: 20px;">Outstanding</div>
+            </li>
+            <li style="padding-top: 20px;">
+              <i class="ti-arrow-circle-right" style="color: #FF9800;"></i>
+              <div style="word-wrap: break-word;width: 90%;display: inline-flex;padding-left: 8px;font-size: 15px;color: #faf4eb;font-weight: 500;;" menu-toggle ui-sref="app.search">O/S DUES</div>
+            </li>
+            <li style="padding-top: 20px;">
+              <i class="ti-arrow-circle-right" style="color: #FF9800;"></i>
+              <div style="word-wrap: break-word;width: 90%;display: inline-flex;padding-left: 8px;font-size: 15px;color: #faf4eb;font-weight: 500;">O/S DEALER (TOP 10)</div>
+            </li>
+          </ul>
+        </div>
+      </div> 
+      <!-- <div style="padding-left: 60px;">
+        <div>
+          <ul>
+            <li style="padding-top: 20px;">
+              <div style="padding: 7px;border: 3px solid #ffffff;color: #f8f8f8;font-weight: bold;margin: auto;width: 80px;text-align: center;background: #52a0d7;border-radius: 50%;height: 80px;font-size: 35px;padding-top: 25px;">SD</div>
+            </li>
+            <li style="padding-top: 20px;text-align: center;">
+              <div style="word-wrap: break-word;display: inline-flex;font-size: 15px;color: #faf4eb;font-weight: 500;text-align: center;font-size: 22px;">Sandeep Dey</div>
+            </li>
+            <li style="padding-top: 4px;text-align: center;padding-bottom: 10px;">
+              <div style="word-wrap: break-word;display: inline-flex;color: #faf4eb;font-weight: 500;text-align: center;font-size: 12px;">HO MANAGER</div>
+            </li>
+            <li style="padding-top: 12px;padding-left: 4px;border-top: 1px solid #aeaeae;">
+              <i class="ion-iphone" style="color: #FF9800;"></i>
+              <div style="word-wrap: break-word;width: 90%;display: inline-flex;padding-left: 3px;font-size: 12px;color: #faf4eb;font-weight: 500;">8981406631</div>
+            </li>
+            <li style="padding-top: 5px;padding-left: 4px;">
+              <i class="ion-at" style="color: #FF9800;"></i>
+              <div style="word-wrap: break-word;display: inline-flex;padding-left: 3px;font-size: 12px;color: #faf4eb;font-weight: 500;">sandeep_dey@hotmail.com</div>
+            </li>
+
+          </ul>
+          <div style="text-align: center;bottom: 18px;position: absolute;margin: auto;width: 215px;background: #F44336;color: #FFF;padding: 7px;">
+            <i class="ion-log-out" style="font-size: 17px;color: #ffffff;"></i>
+            <span style="font-size: 17px;margin-left: 14px;margin-top: -7px;">Log Out</span>
+          </div>
+        </div>
+      </div> -->
+    </ion-content>
+  </ion-side-menu>>
+</ion-side-menus>
